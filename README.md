@@ -11,3 +11,7 @@ I'm creating a little application for playing media files (mp3 for now) using HT
 * Research for a public API with real information
 * Node JS + Express
 * MongoDB + Mongoose
+
+**Running without an HTTP Server on Chrome**
+
+$ chrome.exe --allow-file-access-from-files
