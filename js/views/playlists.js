@@ -3,12 +3,11 @@ define(
         'backbone',
         'underscore',
         'collections/playlists',
-        'views/playlistForm',
         'vendor/text!templates/playlists.html',
         'vendor/text!templates/playlist.html'
     ],
 
-    function (Backbone, _, playlists, PlaylistForm, playlistsTpl, playlistTpl) {
+    function (Backbone, _, playlists, playlistsTpl, playlistTpl) {
 
         var PlaylistsView = Backbone.View.extend({
 
@@ -18,12 +17,7 @@ define(
 
             isRendered: false,
 
-            playlistForm: null,
-
-            initialize: function () {
-                this.playlistForm = new PlaylistForm();
-                playlists.on('add', this.addNewPlayList, this);
-            },
+            initialize: function () {},
 
             render: function () {
 
@@ -40,8 +34,6 @@ define(
 
                 $playlist.html($html);
 
-                this.playlistForm.setElement(this.$('#newPlayListContainer')).render();
-
                 this.isRendered = true;
 
                 return this;
@@ -49,10 +41,6 @@ define(
 
             preparePlaylist: function(playlist) {
                 return _.template(playlistTpl, { playlist: playlist });
-            },
-
-            addNewPlayList: function (playlist) {
-                this.$('.playlists').append(this.preparePlaylist(playlist));
             },
 
             hide: function () {

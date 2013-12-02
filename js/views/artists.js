@@ -18,6 +18,7 @@ define(
             render: function () {
 
                 this.$el.html(_.template(artistsTpl, { title: this.title, artists: artists }));
+                
                 this.isRendered = true;
 
                 return this;
