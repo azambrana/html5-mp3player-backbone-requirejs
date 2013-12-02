@@ -1,0 +1,9 @@
+<h2><%= title %></h2>
+<ol class="results">
+	<% artists.each(function(artist){
+		%>
+		<li><%= artist.get('name') %></li>
+		<%
+		});
+	%>
+</ol>

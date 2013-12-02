@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+            
+.jumbotron {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: inline-block;
+	width: 100%;
+}
+
+#audioPlayer {
+	width: 100%;
+}
+
+#search-form-container {
+	height: 60px;
+}
+
+.float-left {
+    float: left;
+}
+
+ol.results li a {
+	font-size: 16px;
+}
+
+/************** PlayLists Page ***************/
+
+#newPlayListContainer {
+    float: left;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+}
+
+#newPlayListContainer ul {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+#newPlayListContainer > h2:first-child {
+    margin-top: 0;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer p {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

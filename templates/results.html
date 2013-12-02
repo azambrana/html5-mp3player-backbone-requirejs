@@ -1,0 +1,13 @@
+<h2><%= title %></h2>
+<ol class="results">
+	<% if ( results.length > 0 ) {
+		_.each(results, function(result){
+			%>
+			<li><a href="#play/<%= result.get('id') %>"><%= result.get('title') %> | <%= result.get('artist').get('name') %> | <%= result.get('album').get('title') %></a></li>
+			<%
+			});
+		} else {
+			%> <li>No results</li> <%
+		}
+	%>
+</ol>

@@ -1,0 +1,11 @@
+<h2><%= title %></h2>
+<label for="name">Name</label>
+<input name="name" />
+<br />
+<ul id="songs">
+	<% files.each(function(file){ %>
+	<li><input type="checkbox" name="mp3File" value="<%= file.get('id') %>"/><%= file.get('title') %></input></li>
+	<% }); %>
+</ul>
+<br />
+<button id="createPlaylist">Create</button>
